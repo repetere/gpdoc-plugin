@@ -1,0 +1,48 @@
+{
+  "name": "gpdoc",
+  "version": "0.2.0",
+  "description": "Open the GPEditor, edit Markdown and GPDoc files, add review comments and suggestions, and share files from Codex.",
+  "author": {
+    "name": "Repetere",
+    "email": "support@gpdoc.io",
+    "url": "https://gpdoc.io"
+  },
+  "homepage": "https://gpdoc.io",
+  "repository": "https://github.com/repetere/gpdoc-plugin",
+  "license": "Proprietary",
+  "keywords": [
+    "gpdoc",
+    "markdown",
+    "documents",
+    "editing",
+    "sharing",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "GPDoc",
+    "shortDescription": "Open GPEditor to edit and share files",
+    "longDescription": "Open the graphical GPEditor inside Codex to create, read, edit, review, and share Markdown and GPDoc files. Local edits stay inside the active workspace. Sharing uses your GPDoc account only when you request it.",
+    "developerName": "Repetere",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://gpdoc.io",
+    "privacyPolicyURL": "https://gpdoc.io/privacy",
+    "termsOfServiceURL": "https://gpdoc.io/terms",
+    "defaultPrompt": [
+      "Open this Markdown file in GPEditor",
+      "Edit this Markdown file and preserve its format",
+      "Add review suggestions to this GPDoc document",
+      "Share this file through GPDoc"
+    ],
+    "brandColor": "#165DCC",
+    "composerIcon": "./assets/gpdoc-icon.svg",
+    "logo": "./assets/gpdoc-logo.svg",
+    "screenshots": []
+  }
+}

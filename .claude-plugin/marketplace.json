@@ -1,0 +1,34 @@
+{
+  "name": "gpdoc",
+  "owner": {
+    "name": "Repetere",
+    "email": "support@gpdoc.io"
+  },
+  "metadata": {
+    "description": "GPDoc plugins for Markdown editing, document review, and file sharing"
+  },
+  "plugins": [
+    {
+      "name": "gpdoc",
+      "version": "0.2.0",
+      "source": "./plugins/gpdoc",
+      "description": "Open the GPEditor to edit and share Markdown and GPDoc files from Claude Code.",
+      "author": {
+        "name": "Repetere",
+        "email": "support@gpdoc.io"
+      },
+      "homepage": "https://gpdoc.io",
+      "repository": "https://github.com/repetere/gpdoc-plugin",
+      "license": "Proprietary",
+      "category": "Productivity",
+      "tags": [
+        "markdown",
+        "documents",
+        "editing",
+        "sharing",
+        "mcp"
+      ],
+      "strict": true
+    }
+  ]
+}

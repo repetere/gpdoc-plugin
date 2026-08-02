@@ -1,0 +1,10 @@
+interface:
+  display_name: "GPDoc"
+  short_description: "Edit and share Markdown and GPDoc files"
+  brand_color: "#165DCC"
+  default_prompt: "Edit this Markdown or GPDoc file and preserve its format."
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  tools:
+    - "gpdoc_*"

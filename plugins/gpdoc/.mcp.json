@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "gpdoc": {
+      "command": "node",
+      "args": [
+        "-e",
+        "const root=process.env.GPDOC_PLUGIN_ROOT;import(root&&!root.startsWith('$')?root+'/mcp/server.mjs':'./mcp/server.mjs')"
+      ],
+      "cwd": ".",
+      "env": {
+        "GPDOC_PLUGIN_ROOT": "${CLAUDE_PLUGIN_ROOT}"
+      }
+    }
+  }
+}

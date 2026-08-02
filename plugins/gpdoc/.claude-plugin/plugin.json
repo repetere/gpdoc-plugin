@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "gpdoc",
+  "version": "0.2.0",
+  "description": "Open the GPEditor, edit Markdown and GPDoc files, add review comments and suggestions, and share files from Claude Code.",
+  "author": {
+    "name": "Repetere",
+    "email": "support@gpdoc.io",
+    "url": "https://gpdoc.io"
+  },
+  "homepage": "https://gpdoc.io",
+  "repository": "https://github.com/repetere/gpdoc-plugin",
+  "license": "Proprietary",
+  "keywords": [
+    "gpdoc",
+    "markdown",
+    "documents",
+    "editing",
+    "sharing",
+    "mcp"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "gpdoc": {
+      "command": "node",
+      "args": [
+        "./mcp/server.mjs"
+      ],
+      "cwd": "."
+    }
+  }
+}

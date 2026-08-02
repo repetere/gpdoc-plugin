@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-label="GPDoc">
+  <rect x="4" y="4" width="88" height="88" rx="20" fill="#165DCC"/>
+  <path d="M26 19h35l17 17v41H26z" fill="#fff"/>
+  <path d="M61 19v18h17" fill="#BFD6FF"/>
+  <path d="M38 49h28M38 59h28M38 69h18" stroke="#165DCC" stroke-width="5" stroke-linecap="round"/>
+  <text x="112" y="65" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#15233D">GPDoc</text>
+</svg>
