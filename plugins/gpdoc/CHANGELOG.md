@@ -1,9 +1,17 @@
 # Changelog
 
+## 0.4.0
+
+- Build Claude and Codex editors from one frontend and feature backend.
+- Add shared export options and progress, themes and variables, image editing, account settings, sharing, cloud storage, publishing and collaboration controls.
+- Automatically connect open drafts for chat comments and suggestions, with a visible disconnect control.
+- Add /gpdoc:open and session context to prefer GPEditor for interactive Markdown opening in Claude Desktop Preview. Claude native file links remain host-controlled.
+- Protect exact file bindings when panels are reused; retain drafts during conflicts and suspend file polling during saves.
+- Require Node.js 22 or newer.
+
 ## 0.3.0
 
-- Add authenticated Context Lake discovery, inspection, and cited search.
-- Preserve workspace-scoped editing, review metadata, exact-revision saves, and the local GPEditor preview.
+- Add authenticated Context Lake discovery, inspection and cited search.
 
 ## 0.2.1
 

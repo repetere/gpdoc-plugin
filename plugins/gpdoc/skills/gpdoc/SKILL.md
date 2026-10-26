@@ -1,6 +1,6 @@
 ---
 name: gpdoc
-description: Create, read, edit, review, or share Markdown and GPDoc files and search Context Lakes from Codex or Claude Code. Use for documents, comments, suggestions, slides, notebooks, GPDoc sign-in, Context Lake discovery and cited search, and explicit file sharing.
+description: Open and show Markdown documents in GPEditor by default for interactive document requests; create, read, edit, review, or share Markdown and GPDoc files and search Context Lakes from Codex or Claude Code. Use for documents, comments, suggestions, slides, notebooks, GPDoc sign-in, Context Lake discovery and cited search, and explicit file sharing.
 ---
 
 # GPDoc
@@ -18,8 +18,8 @@ Use the `gpdoc_*` MCP tools for Markdown and GPDoc work.
 
 ## Open GPEditor
 
-- In Codex, call `gpdoc_open_editor` with `mode: "embedded"`. The GPEditor opens as an MCP App in the conversation.
-- In Claude Code Desktop, call `gpdoc_open_editor` with `mode: "preview"`. Open the returned loopback URL in Claude's Preview pane.
+- In Codex, call `gpdoc_open_editor` with `surface: "embedded"`. The GPEditor opens as an MCP App in the conversation.
+- In Claude Code Desktop, call `gpdoc_open_editor` with `surface: "preview"`. Open the returned loopback URL in Claude's Preview pane.
 - The preview URL is short-lived, bound to one file, and must not be copied into tracked files or shared with another person.
 - If a client cannot render the editor, keep working through the `gpdoc_*` file tools and report that the graphical surface is unavailable in that client.
 - User edits made in GPEditor are direct edits. The editor enforces exact-revision saves and reports conflicts instead of overwriting newer content.
@@ -52,3 +52,9 @@ Share only when the user explicitly asks.
 6. If the tool returns `SHARE_REMOTE_ONLY`, keep the returned URL, read the file again, and use `gpdoc_reconcile_share`. Do not create a second share.
 
 Credentials remain in the MCP process or the parent environment. Do not write them to the workspace, plugin directory, logs, or messages.
+
+## Shared editor and connected drafts
+
+For interactive requests to open, show, or manually edit .md or .markdown documents, prefer gpdoc_open_editor and the graphical GPEditor over returning a plain file link. Background source inspection may use normal file tools without opening a pane. Claude controls native file-link clicks; this plugin cannot replace that viewer. /gpdoc:open is the explicit graphical command.
+
+The same editor UI and service implementation provide exports, themes and variables, image editing, account sign-in, sharing, cloud storage, publishing and collaboration on supported clients. Remote actions require the relevant signed-in accounts. Opening a draft connects it automatically to chat review. Use gpdoc_inspect_open_document, gpdoc_comment_open_document and gpdoc_suggest_open_document with exact revisions and stable request IDs. Inspect commandId to confirm acknowledgement. Comments and suggestions stay unsaved until the user saves. Respect manual disconnect. gpdoc_editor_context contains explicitly attached selections and export paths.

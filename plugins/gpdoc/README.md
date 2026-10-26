@@ -4,7 +4,7 @@ The GPDoc plugin opens the graphical GPEditor from Codex and Claude Code. You ca
 
 ## Requirements
 
-- Node.js 20 or later
+- Node.js 22 or later
 - Codex or Claude Code with plugin and MCP support
 - A GPDoc account only when sharing
 
@@ -66,3 +66,13 @@ Ask the client to share only when you want a remote GPDoc link. The plugin will 
 - `GPDOC_ALLOW_DEVELOPMENT_ENDPOINTS=true`: allow loopback development endpoints
 
 Do not place access tokens in tracked files.
+
+## Shared editor in 0.4.0
+
+Claude Code Desktop Preview and Codex use one GPEditor frontend. It includes exports (PDF, DOCX, HTML, Markdown and LaTeX), export progress and saved-file actions, themes and variables, image editing, HTML preview, file details, account settings, sharing, provider/cloud storage, publishing, and collaboration controls. Remote services require the corresponding signed-in accounts. Local exports do not require MCP network services.
+
+Ask Claude to open a .md or .markdown file in GPEditor, or use `/gpdoc:open path/to/document.md`. The plugin skill and session context prefer GPEditor for interactive document opening. Open its returned local URL in Claude Desktop Preview. Claude controls its built-in file pane and file-path clicks; this plugin cannot replace that viewer. Terminal users can open the returned local URL in a browser.
+
+Drafts connect automatically for chat inspection, comments and suggestions. A visible control disconnects them. Reviews stay in the draft until the user saves. The same revision checks protect saves in both clients.
+
+The source build checks frontend script identity and records `mcp/editor-parity.json`. Native and hosted ChatGPT packages have separate versions. Anthropic directory review is separate from this public marketplace release. Live native-host and signed-in provider acceptance remain separate from automated browser/protocol checks.

@@ -1,6 +1,6 @@
 {
   "name": "gpdoc",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Open the GPEditor, edit Markdown and GPDoc files, add review comments and suggestions, and share files from Codex.",
   "author": {
     "name": "Repetere",
@@ -19,7 +19,7 @@
     "mcp"
   ],
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json",
+  "mcpServers": "./.codex-mcp.json",
   "interface": {
     "displayName": "GPDoc",
     "shortDescription": "Open GPEditor to edit and share files",

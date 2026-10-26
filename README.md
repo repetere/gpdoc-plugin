@@ -1,6 +1,6 @@
 # GPDoc plugin marketplace
 
-This repository publishes the GPDoc plugin for Codex and Claude Code. The plugin opens GPEditor for workspace-scoped Markdown editing, preserves GPDoc review metadata, and shares a saved file only when the user explicitly requests it.
+This repository publishes the GPDoc plugin for Codex and Claude Code. Claude Code and Codex use the same GPEditor frontend for Markdown editing, exports, themes, review, account and service actions. Workspace saves remain revision-checked. Sharing and publishing require explicit user actions.
 
 ## Install in Claude Code
 
@@ -10,6 +10,8 @@ claude plugin install gpdoc@gpdoc
 ```
 
 The Anthropic directory listing is a separate submission and requires approval. Installation from this public marketplace is available now.
+
+After installation, restart Claude and use `/gpdoc:open path/to/document.md`, or ask Claude to open the document in GPEditor. Claude controls its built-in file-link viewer; interactive open requests use the GPEditor Browser/Preview flow.
 
 ## Install in Codex
 
