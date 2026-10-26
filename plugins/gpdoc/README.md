@@ -12,11 +12,10 @@ No dependency installation is required inside the plugin.
 
 ## Codex
 
-Clone the public marketplace, then install `gpdoc@gpdoc`:
+Add this repository as a local marketplace, then install `gpdoc@gpdoc`:
 
 ```bash
-git clone https://github.com/repetere/gpdoc-plugin.git
-codex plugin marketplace add ./gpdoc-plugin
+codex plugin marketplace add /path/to/gpdoc
 codex plugin add gpdoc@gpdoc
 ```
 
@@ -24,17 +23,17 @@ Restart Codex after installation so the bundled MCP server, editor app, and skil
 
 ## Claude Code
 
-Add the public marketplace and install the plugin:
+Add this repository as a marketplace and install the plugin:
 
 ```bash
-claude plugin marketplace add repetere/gpdoc-plugin
+claude plugin marketplace add /path/to/gpdoc
 claude plugin install gpdoc@gpdoc
 ```
 
 For a temporary development session:
 
 ```bash
-claude --plugin-dir ./gpdoc-plugin/plugins/gpdoc
+claude --plugin-dir ./plugins/gpdoc
 ```
 
 ## Use

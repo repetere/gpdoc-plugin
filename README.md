@@ -9,7 +9,7 @@ claude plugin marketplace add repetere/gpdoc-plugin
 claude plugin install gpdoc@gpdoc
 ```
 
-After Anthropic approves the community-directory submission, GPDoc will also be available from the `claude-community` marketplace.
+The Anthropic directory listing is a separate submission and requires approval. Installation from this public marketplace is available now.
 
 ## Install in Codex
 

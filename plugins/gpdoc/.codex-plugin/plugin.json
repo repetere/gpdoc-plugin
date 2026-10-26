@@ -1,6 +1,6 @@
 {
   "name": "gpdoc",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Open the GPEditor, edit Markdown and GPDoc files, add review comments and suggestions, and share files from Codex.",
   "author": {
     "name": "Repetere",

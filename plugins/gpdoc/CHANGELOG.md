@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0
+
+- Add authenticated Context Lake discovery, inspection, and cited search.
+- Preserve workspace-scoped editing, review metadata, exact-revision saves, and the local GPEditor preview.
+
+## 0.2.1
+
+- Use the production public native Auth0 client for terminal and agent device sign-in.
+
 ## 0.2.0
 
 - Add the graphical GPEditor as an embedded Codex MCP App.

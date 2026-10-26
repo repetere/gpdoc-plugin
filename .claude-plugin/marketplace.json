@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "gpdoc",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source": "./plugins/gpdoc",
       "description": "Open the GPEditor to edit and share Markdown and GPDoc files from Claude Code.",
       "author": {
